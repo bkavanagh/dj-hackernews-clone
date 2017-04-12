@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Detail | {{ block.super }}
+{% endblock title %}
+
+
+{% block content %}
+    <h1>
+        {{ post.title }}
+    </h1>
+    <p>
+        {{ post.description }}
+    </p>
+
+{% endblock content %}

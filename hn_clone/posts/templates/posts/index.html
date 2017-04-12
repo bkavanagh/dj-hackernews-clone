@@ -5,5 +5,7 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Index</h1>
+    {% for post in posts_list %}
+        <a href="{% url 'posts:detail' id=post.id  %}">{{ post.title }}</a>
+    {% endfor %}
 {% endblock content %}
