@@ -120,3 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Default: Not defined
+# The ID, as an integer, of the current site in the django_site database
+# table. This is used so that application data can hook into specif ic
+# sites and a single database can manage content for multiple sites.
+SITE_ID = 1
